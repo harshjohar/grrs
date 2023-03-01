@@ -74,6 +74,8 @@ jobs:
     job-publish:
         name: "Publish an update"
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
         needs:
             - job-linux-1
             - job-macos-1
