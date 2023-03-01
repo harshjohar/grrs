@@ -100,9 +100,9 @@ jobs:
               run: mkdir stage
             - name: "Rename the artifacts to include the operating system and architecture."
               run: |
-                  mv ./release/linux/amd64/grrs ./stage/grrs.linux.amd64
-                  mv ./release/macos/amd64/grrs ./stage/grrs.macos.amd64
-                  mv ./release/windows/amd64/grrs.exe ./stage/grrs.windows.amd64
+                  mv ./release/linux/amd64/grrs ./stage/grrs-linux-amd64
+                  mv ./release/macos/amd64/grrs ./stage/grrs-macos-amd64
+                  mv ./release/windows/amd64/grrs.exe ./stage/grrs-windows-amd64
             - name: "Brag #1"
               run: find ./release
             - name: "Brag #2"
